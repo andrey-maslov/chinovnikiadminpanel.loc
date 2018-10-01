@@ -17,7 +17,7 @@
           </div>
           <div class="x_content">
             <br />
-            <form id="org-info" data-parsley-validate class="form-horizontal form-label-left">
+            <form data-parsley-validate class="form-horizontal form-label-left">
 
               <div class="form-group">
                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="org-name">Название <span class="required">*</span>

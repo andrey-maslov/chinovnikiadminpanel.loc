@@ -18,7 +18,7 @@
                     </div>
                     <div class="x_content">
                         <!-- Выбор временного промежутка -->
-                        <form id="common-info" data-parsley-validate class="form-horizontal form-label-left">
+                        <form id="caseCommonInfo" data-parsley-validate class="form-horizontal form-label-left">
 
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">С
@@ -94,12 +94,9 @@
                                     </td>
                                 </tr>
                                 </tbody>
-
                             </table>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>     <!--/row Последние публикации -->

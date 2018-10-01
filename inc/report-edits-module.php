@@ -20,13 +20,13 @@
 
 
                         <!-- Выбор временного промежутка  и редактора -->
-                        <form id="common-info" data-parsley-validate class="form-horizontal form-label-left">
+                        <form data-parsley-validate class="form-horizontal form-label-left">
 
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Выберите редактора
                                 </label>
                                 <div class="col-md-3 col-sm-6 col-xs-12">
-                                    <input type="text" class="form-control" id="editor">
+                                    <input type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-9 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset 6">

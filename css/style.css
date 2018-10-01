@@ -674,7 +674,7 @@ footer {
   background: #fff;
   padding: 5px 20px 0;
   height: 45px;
-  margin: 0 -17px;
+  margin: 0;
 }
 .tile-stats.sparkline {
   padding: 10px;
@@ -5405,11 +5405,16 @@ ul.notifications {
   height: 2px;
 }
 .copyright-info {
-  padding: 8px 0;
+  padding: 8px 0 0 0;
 }
 
 
 /* ======== Custom styles =========== */
+
+/* Common */
+.modal-title {
+  text-align: center;
+}
 
 /*Top-nav*/
 .view-record {
@@ -5460,7 +5465,12 @@ ul.notifications {
 .visible {
   display: block !important;
 }
+.upload-link {
+  margin-bottom: 100px;
+}
+
 /*Case */
+
 .case-text-checkbox {
   margin-top: 10px;
   margin-left: 15px;
@@ -5490,6 +5500,11 @@ th.column-title {
 }
 .btn {
   font-size: 15px;
+}
+button[type=submit],
+button[type=button] {
+  font-size: 18px;
+  padding: 10px 26px;
 }
 .double-danger {
   color: #ffffff !important;
@@ -5619,6 +5634,11 @@ input, textarea {
 }
 .btn-primary:hover {
   background-color: #3a6e9c;
+}
+
+/* Tabs */
+ul.bar_tabs > li {
+  margin-bottom: 15px !important;
 }
 
 /* MEDIA */

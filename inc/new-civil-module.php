@@ -255,7 +255,7 @@
                                 </div>
                                 <div class="x_content">
 
-                                    <form action="">
+                                    <form >
                                         <div class="form-group">
                                             <label class="control-label col-md-2 col-sm-3 col-xs-12">Текстовый
                                                 редактор</label>
@@ -414,14 +414,21 @@
                                         выбрать
                                         файлы.</p>
                                     <form action="choices/form_upload.html" class="dropzone"
-                                          style="border: 1px solid #e5e5e5; height: 200px; "></form>
+                                          style="border: 1px solid #e5e5e5; height: 200px; ">
+                                    </form>
+                                    <div class="clearfix"></div>
 
                                     <div class="ln_solid"></div>
+                                    <div class="form-group upload-link">
+                                        <label for="website" class="control-label col-md-2 col-sm-3 col-xs-12">Загрузить по ссылке</label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="website" class="form-control col-md-7 col-xs-12" type="url" name="website">
+                                        </div>
+                                    </div>
 
                                     <div class="form-group">
                                         <div class="col-xs-12">
                                             <button type="submit" class="btn btn-success">Сохранить</button>
-                                            <button type="submit" class="btn btn-primary">Очистить</button>
                                         </div>
                                     </div>
 
@@ -441,7 +448,7 @@
                                 </div>
                                 <div class="x_content">
 
-                                    <form action="" class="case-promise-date">
+                                    <form  class="case-promise-date">
                                         <div class="form-group">
                                             <label class="control-label col-md-2 col-sm-3 col-xs-12">Выберите дату
                                                 проверки
@@ -454,7 +461,7 @@
                                         </div>
                                     </form>
 
-                                    <form id="casePromise" class="civilPromise" action="">
+                                    <form id="casePromise" class="civilPromise" >
                                         <p>Если есть необходимость добавить такую характеристику как "выполнение
                                             обещаний",
                                             то активируйте форму ниже и выберите нужный пункт.</p>

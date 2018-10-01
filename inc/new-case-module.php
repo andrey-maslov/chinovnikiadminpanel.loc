@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="x_content">
                                     <br/>
-                                    <form id="common-case" data-parsley-validate
+                                    <form data-parsley-validate
                                           class="form-horizontal form-label-left">
 
                                         <div class="form-group">
@@ -82,8 +82,8 @@
                                             <label for="case-desc"
                                                    class="control-label col-md-3 col-sm-3 col-xs-12">Описание</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                        <textarea id="case-desc" class="form-control" rows="3"
-                                                                  placeholder="Описание случая"></textarea>
+                                            <textarea id="case-desc" class="form-control" rows="3"
+                                                    placeholder="Описание случая"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -152,11 +152,11 @@
 
                                             <tbody>
                                             <tr class="even pointer">
-                                                <td class=" ">Пожар в лесном огороде</td>
-                                                <td class=" ">27.03.2017</td>
-                                                <td class=" ">13:05</td>
-                                                <td class=" ">Михаил Задорнов</td>
-                                                <td class=" last">
+                                                <td>Пожар в лесном огороде</td>
+                                                <td>27.03.2017</td>
+                                                <td>13:05</td>
+                                                <td>Михаил Задорнов</td>
+                                                <td class="last">
                                                     <a href="#" class="btn btn-primary btn-xs"><i
                                                                 class="fa fa-folder"></i>
                                                         Смотреть
@@ -171,11 +171,11 @@
                                                 </td>
                                             </tr>
                                             <tr class="odd pointer">
-                                                <td class=" ">Пожар в лесном огороде</td>
-                                                <td class=" ">27.03.2017</td>
-                                                <td class=" ">13:05</td>
-                                                <td class=" ">Михаил Задорнов</td>
-                                                <td class=" last">
+                                                <td>Пожар в лесном огороде</td>
+                                                <td>27.03.2017</td>
+                                                <td>13:05</td>
+                                                <td>Михаил Задорнов</td>
+                                                <td class="last">
                                                     <a href="#" class="btn btn-primary btn-xs"><i
                                                                 class="fa fa-folder"></i>
                                                         Смотреть
@@ -190,11 +190,11 @@
                                                 </td>
                                             </tr>
                                             <tr class="even pointer">
-                                                <td class=" ">Пожар в лесном огороде</td>
-                                                <td class=" ">27.03.2017</td>
-                                                <td class=" ">13:05</td>
-                                                <td class=" ">Михаил Задорнов</td>
-                                                <td class=" last">
+                                                <td>Пожар в лесном огороде</td>
+                                                <td>27.03.2017</td>
+                                                <td>13:05</td>
+                                                <td>Михаил Задорнов</td>
+                                                <td class="last">
                                                     <a href="#" class="btn btn-primary btn-xs"><i
                                                                 class="fa fa-folder"></i>
                                                         Смотреть
@@ -226,7 +226,7 @@
                                 </div>
                                 <div class="x_content">
 
-                                    <form action="" id="case-publication" class="case-publication">
+                                    <form id="case-publication" class="case-publication">
                                         <div class="form-group">
                                             <div class="col-xs-12">
                                                 <textarea class="ckeditor" id="ckeditor"></textarea>
@@ -271,6 +271,14 @@
                                           style="border: 1px solid #e5e5e5; height: 200px; "></form>
 
                                     <div class="ln_solid"></div>
+                                    <div class="clearfix"></div>
+
+                                    <div class="form-group upload-link">
+                                        <label for="website" class="control-label col-md-2 col-sm-3 col-xs-12">Загрузить по ссылке</label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input id="website" class="form-control col-md-7 col-xs-12" type="url" name="website">
+                                        </div>
+                                    </div>
 
                                     <div class="form-group">
                                         <div class="col-xs-12">
@@ -295,7 +303,7 @@
                                 </div>
                                 <div class="x_content">
 
-                                    <form id="case-org" data-parsley-validate class="form-horizontal form-label-left">
+                                    <form data-parsley-validate class="form-horizontal form-label-left">
 
                                         <div class="form-group">
                                             <button type="button" class="btn btn-primary">Добавить организацию</button>
@@ -320,7 +328,7 @@
                                 </div>
                                 <div class="x_content">
 
-                                    <form id="case-org" data-parsley-validate class="form-horizontal form-label-left">
+                                    <form data-parsley-validate class="form-horizontal form-label-left">
 
                                         <div class="form-group">
                                             <button type="button" class="btn btn-primary">Добавить организацию</button>
@@ -365,24 +373,24 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr class="even pointer">
-                                                        <td class=" ">Пожар в лесном огороде</td>
-                                                        <td class=" last">
+                                                        <td>Пожар в лесном огороде</td>
+                                                        <td class="last">
                                                             <a href="#" class="btn btn-danger btn-xs"><i
                                                                         class="far fa-trash-alt"></i>
                                                                 Отвязать </a>
                                                         </td>
                                                     </tr>
                                                     <tr class="odd pointer">
-                                                        <td class=" ">Пожар в лесном огороде</td>
-                                                        <td class=" last">
+                                                        <td >Пожар в лесном огороде</td>
+                                                        <td class="last">
                                                             <a href="#" class="btn btn-danger btn-xs"><i
                                                                         class="far fa-trash-alt"></i>
                                                                 Отвязать </a>
                                                         </td>
                                                     </tr>
                                                     <tr class="even pointer">
-                                                        <td class=" ">Пожар в лесном огороде</td>
-                                                        <td class=" last">
+                                                        <td>Пожар в лесном огороде</td>
+                                                        <td class="last">
                                                             <a href="#" class="btn btn-danger btn-xs"><i
                                                                         class="far fa-trash-alt"></i>
                                                                 Отвязать </a>
@@ -433,7 +441,7 @@
                                 </div>
                                 <div class="x_content">
 
-                                    <form id="case-org" data-parsley-validate class="form-horizontal form-label-left">
+                                    <form data-parsley-validate class="form-horizontal form-label-left">
 
                                         <div class="form-group">
                                             <button type="button" class="btn btn-primary">Добавить организацию</button>
@@ -458,7 +466,7 @@
                                 </div>
                                 <div class="x_content">
 
-                                    <form id="case-org" data-parsley-validate class="form-horizontal form-label-left">
+                                    <form data-parsley-validate class="form-horizontal form-label-left">
 
                                         <div class="form-group">
                                             <button type="button" class="btn btn-primary">Добавить публикацию</button>
@@ -502,37 +510,37 @@
                                                     </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr class="even pointer">
-                                                        <td class=" ">Пожар в лесном огороде</td>
-                                                        <td class=" last">
-                                                            <a href="#" class="btn btn-danger btn-xs"><i
-                                                                        class="far fa-trash-alt"></i>
-                                                                Отвязать </a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="odd pointer">
-                                                        <td class=" ">Пожар в лесном огороде</td>
-                                                        <td class=" last">
-                                                            <a href="#" class="btn btn-danger btn-xs"><i
-                                                                        class="far fa-trash-alt"></i>
-                                                                Отвязать </a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="even pointer">
-                                                        <td class=" ">Пожар в лесном огороде</td>
-                                                        <td class=" last">
-                                                            <a href="#" class="btn btn-danger btn-xs"><i
-                                                                        class="far fa-trash-alt"></i>
-                                                                Отвязать </a>
-                                                        </td>
-                                                    </tr>
+                                                        <tr class="even pointer">
+                                                            <td>Пожар в лесном огороде</td>
+                                                            <td class="last">
+                                                                <a href="#" class="btn btn-danger btn-xs"><i
+                                                                            class="far fa-trash-alt"></i>
+                                                                    Отвязать </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="odd pointer">
+                                                            <td>Пожар в лесном огороде</td>
+                                                            <td class="last">
+                                                                <a href="#" class="btn btn-danger btn-xs"><i
+                                                                            class="far fa-trash-alt"></i>
+                                                                    Отвязать </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="even pointer">
+                                                            <td>Пожар в лесном огороде</td>
+                                                            <td class="last">
+                                                                <a href="#" class="btn btn-danger btn-xs"><i
+                                                                            class="far fa-trash-alt"></i>
+                                                                    Отвязать </a>
+                                                            </td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <form id="case-org" data-parsley-validate class="form-horizontal form-label-left">
+                                    <form data-parsley-validate class="form-horizontal form-label-left">
 
                                         <div class="col-xs-12">
                                             <button type="button" class="btn btn-primary">Добавить публикацию</button>
@@ -543,7 +551,7 @@
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12"
                                                    for="case-header">Публикация</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="" class="form-control">
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-xs-12 col-md-offset-3">
@@ -581,7 +589,7 @@
                                                   style="border: 1px solid #e5e5e5; height: 200px; "></form>
                                         </div>
                                     </div>
-                                    <form id="case-org" data-parsley-validate class="form-horizontal form-label-left">
+                                    <form data-parsley-validate class="form-horizontal form-label-left">
 
                                         <div class="col-xs-12">
                                             <div class="form-group upload-button">
@@ -611,7 +619,7 @@
                                 </div>
                                 <div class="x_content">
 
-                                    <form action="" class="case-promise-date">
+                                    <form class="case-promise-date">
                                         <div class="form-group">
                                             <label class="control-label col-md-2 col-sm-3 col-xs-12">Выберите дату
                                                 проверки
@@ -633,7 +641,7 @@
                                         <div class="col-md-2 col-sm-4 col-xs-12 promise-activate">
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox"  name="" id="promiseActivate">
+                                                    <input type="checkbox"  name="promiseActivate" id="promiseActivate">
                                                     Активировать форму
                                                 </label>
                                             </div>
