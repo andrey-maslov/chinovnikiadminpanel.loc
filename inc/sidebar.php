@@ -10,9 +10,6 @@
 
     <!-- menu prile quick info -->
     <div class="profile">
-        <!-- <div class="profile_pic">
-          <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-        </div> -->
         <div class="profile_info">
             <span>Здравствуйте,</span>
             <h2>Андрей Маслов</h2>
@@ -76,7 +73,5 @@
                 </li>
             </ul>
         </div>
-    </div>
-    <!-- /sidebar menu -->
-
+    </div>  <!-- /sidebar menu -->
 </div>

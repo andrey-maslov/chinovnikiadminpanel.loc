@@ -1,8 +1,6 @@
-
+<script src="ckeditor/ckeditor.js"></script>
 
 <script src="js/bootstrap.min.js"></script>
-
-<script src="js/nicescroll/jquery.nicescroll.min.js"></script>
 
 <!-- daterangepicker -->
 <script src="js/moment/moment.min.js"></script>

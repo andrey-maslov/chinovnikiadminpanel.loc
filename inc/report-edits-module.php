@@ -36,14 +36,14 @@
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">С
                                 </label>
                                 <div class="col-md-3 col-sm-6 col-xs-12">
-                                    <input type="text" class="form-control date-picker" id="start">
+                                    <input type="text" class="form-control date-picker">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">По
                                 </label>
                                 <div class="col-md-3 col-sm-6 col-xs-12">
-                                    <input type="text" class="form-control date-picker" id="end">
+                                    <input type="text" class="form-control date-picker">
                                 </div>
                             </div>
 
@@ -68,28 +68,28 @@
                                     </thead>
                                     <tbody>
                                     <tr class="even pointer">
-                                        <td class=" ">Евгений Петров</td>
-                                        <td class=" "> 23.07.2018</td>
-                                        <td class=" ">11:05</td>
+                                        <td>Евгений Петров</td>
+                                        <td> 23.07.2018</td>
+                                        <td>11:05</td>
                                         <td class=" last">
                                             <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> Смотреть
                                             </a>
                                         </td>
                                     </tr>
                                     <tr class="odd pointer">
-                                        <td class=" ">Евгений Петров</td>
-                                        <td class=" ">23.07.2018</td>
-                                        <td class=" ">23:25</td>
-                                        <td class=" last">
+                                        <td>Евгений Петров</td>
+                                        <td>23.07.2018</td>
+                                        <td>23:25</td>
+                                        <td class="last">
                                             <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> Смотреть
                                             </a>
                                         </td>
                                     </tr>
                                     <tr class="even pointer">
-                                        <td class=" ">Евгений Петров</td>
-                                        <td class=" ">23.07.2018</td>
-                                        <td class=" "> 00:04</td>
-                                        <td class=" last">
+                                        <td>Евгений Петров</td>
+                                        <td>23.07.2018</td>
+                                        <td> 00:04</td>
+                                        <td class="last">
                                             <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> Смотреть
                                             </a>
                                         </td>
@@ -99,11 +99,7 @@
                             </div>
                             <div class="ln_solid"></div>
                         </div><!-- / Таблица правок -->
-
-
                     </div>
-
-
                 </div>
             </div>
         </div>     <!--/row Общая информация -->

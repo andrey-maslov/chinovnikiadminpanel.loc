@@ -17,20 +17,20 @@
                     <div class="x_content">
                         <br/>
                         <!-- Выбор временного промежутка -->
-                        <form id="common-info" data-parsley-validate class="form-horizontal form-label-left">
+                        <form data-parsley-validate class="form-horizontal form-label-left">
 
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">С
                                 </label>
                                 <div class="col-md-3 col-sm-6 col-xs-12">
-                                    <input type="text" class="form-control date-picker" id="start">
+                                    <input type="text" class="form-control date-picker">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">По
                                 </label>
                                 <div class="col-md-3 col-sm-6 col-xs-12">
-                                    <input type="text" class="form-control date-picker" id="end">
+                                    <input type="text" class="form-control date-picker">
                                 </div>
                             </div>
 
@@ -56,22 +56,22 @@
                                     </thead>
                                     <tbody>
                                     <tr class="even pointer">
-                                        <td class=" ">Юзер 1</td>
-                                        <td class=" "> 55/ 88</td>
-                                        <td class=" "> 11 / 1</td>
-                                        <td class=" last"> 1 / 1</td>
+                                        <td>Юзер 1</td>
+                                        <td> 55/ 88</td>
+                                        <td> 11 / 1</td>
+                                        <td class="last"> 1 / 1</td>
                                     </tr>
                                     <tr class="odd pointer">
-                                        <td class=" ">Юзер 2</td>
-                                        <td class=" ">33 / 55</td>
-                                        <td class=" ">55 / 22</td>
-                                        <td class=" last">21 / 55</td>
+                                        <td>Юзер 2</td>
+                                        <td>33 / 55</td>
+                                        <td>55 / 22</td>
+                                        <td class="last">21 / 55</td>
                                     </tr>
                                     <tr class="even pointer">
-                                        <td class=" ">Юзер 3</td>
-                                        <td class=" ">33 / 88</td>
-                                        <td class=" "> 0 / 4</td>
-                                        <td class=" last">78 / 0</td>
+                                        <td>Юзер 3</td>
+                                        <td>33 / 88</td>
+                                        <td> 0 / 4</td>
+                                        <td class="last">78 / 0</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -79,11 +79,7 @@
                             <div class="ln_solid"></div>
                             <p class="number-votes">Проголосовали <span>5389</span> раз</p>
                         </div><!-- / Таблица правок -->
-
-
                     </div>
-
-
                 </div>
             </div>
         </div>     <!--/row Общая информация -->
