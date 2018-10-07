@@ -8,11 +8,12 @@
 <!-- select2 -->
 <script src="js/select/select2.full.js"></script>
 
-<script src="js/custom.js"></script>
 
 <!--    Datatable new-->
 <script src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
 
+<!--User scripts-->
+<script src="js/custom.js"></script>
 
 <!-- input mask -->
 <script>

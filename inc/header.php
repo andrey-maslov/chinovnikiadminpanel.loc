@@ -20,7 +20,7 @@
     <!-- select2 -->
     <link href="css/select/select2.min.css" rel="stylesheet">
 
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css?v=1.0.0" rel="stylesheet">
 
     <script src="js/jquery.min.js"></script>
 

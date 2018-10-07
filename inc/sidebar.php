@@ -1,9 +1,14 @@
 <div class="left_col scroll-view">
 
     <div class="navbar nav_title" style="border: 0;">
-        <a href="https://maslov.work/projects/chinovniki" class="site_title">
+        <a href="/" class="site_title">
             <!-- <i class="fa fa-paw"></i>  -->
-            <p>Чиновники<span class="orange">.инфо</span></p>
+            <div class="title-header">
+                <p>Чиновники<span class="orange">.инфо</span></p>
+            </div>
+            <div class="title-logo">
+                <i class="far fa-check-circle"></i>
+            </div>
         </a>
     </div>
     <div class="clearfix"></div>

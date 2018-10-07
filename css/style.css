@@ -81,7 +81,7 @@ body.nav-sm .nav.side-menu li a {
   padding: 10px 5px;
 }
 body.nav-sm .nav.side-menu li.active-sm {
-  border-right: 5px solid #1ABB9C;
+  border-right: 5px solid #ff7334;
 }
 body.nav-sm > .nav.side-menu > li.active-sm > a {
   color: #1ABB9C !important;
@@ -592,7 +592,7 @@ body.nav-md ul.nav.child_menu li:after {
   padding: 13px 15px 7px;
 }
 .nav.side-menu> li.current-page, .nav.side-menu> li.active {
-  border-right: 5px solid #1ABB9C;
+  border-right: 5px solid #ff7334;
 }
 li.current-page {
   background: rgba(255, 255, 255, 0.05);
@@ -3438,6 +3438,17 @@ ul.notifications {
   display: flex;
   justify-content: flex-end;
 }
+.nav-sm .title-header {
+  display: none;
+}
+.nav-sm .title-logo {
+  display: block;
+  font-size: 24px;
+  color: #ff7334;
+}
+.title-logo i {
+  border: none;
+}
 
 
 /*Top-nav*/
@@ -3684,7 +3695,17 @@ ul.bar_tabs > li {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+  .title-header {
+    display: none;
+  }
+  .title-logo {
+    display: block;
+    font-size: 24px;
+    color: #ff7334;
+  }
+  .site_title i {
+    border: none;
+  }
 }
 
 /* Small Devices, Tablets */
