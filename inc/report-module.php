@@ -17,7 +17,7 @@
                     <div class="x_content">
                         <br/>
                         <!-- Выбор временного промежутка -->
-                        <form data-parsley-validate class="form-horizontal form-label-left">
+                        <form data-parsley-validate class="form-horizontal form-label-left report-date">
 
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">С

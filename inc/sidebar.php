@@ -54,7 +54,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a><i class="fas fa-chart-bar"></i></i> Отчеты <span class="fas fa-chevron-down"></span></a>
+                <li><a><i class="fas fa-chart-bar"></i> Отчеты <span class="fas fa-chevron-down"></span></a>
                     <ul class="nav child_menu" style="display: none">
                         <li>
                             <a href="report.php">Отчет по редакторам</a>
@@ -67,7 +67,7 @@
                 <li><a><i class="fas fa-user-edit"></i> Редакторы <span class="fas fa-chevron-down"></span></a>
                     <ul class="nav child_menu" style="display: none">
                         <li>
-                            <a href="managers.php">Список редакторов</a>
+                            <a href="editors.php">Список редакторов</a>
                         </li>
                     </ul>
                 </li>

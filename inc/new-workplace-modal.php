@@ -1,5 +1,5 @@
  <!-- Modal New workplace -->
- <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+ <div class="modal fade new-workplace" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 
@@ -12,43 +12,43 @@
         <form data-parsley-validate class="form-horizontal form-label-left">
 
           <div class="form-group">
-            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="organization">Организация <span class="required">*</span>
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="add-civil-org">Организация <span class="required">*</span>
             </label>
             <div class="col-md-6 col-sm-6 col-xs-12">
-              <input type="text" name="organization" required="required" class="form-control col-md-7 col-xs-12">
+              <input type="text" name="add-civil-org" id="add-civil-org" required="required" class="form-control col-md-7 col-xs-12">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="position">Должность <span class="required">*</span>
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="add-civil-position">Должность <span class="required">*</span>
             </label>
             <div class="col-md-6 col-sm-6 col-xs-12">
-              <input type="text" name="position" required="required" class="form-control col-md-7 col-xs-12">
+              <input type="text" name="add-civil-position" id="add-civil-position" required="required" class="form-control col-md-7 col-xs-12">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-md-3 col-sm-3 col-xs-12">Назначение
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="add-civil-start">Назначение
             </label>
             <div class="col-md-6 col-sm-6 col-xs-12">
-              <input type="text" class="form-control" data-toggle="tooltip" title="Можно указать неполную дату. Например, только год, если не известно остальное">
+              <input type="text" class="form-control" data-toggle="tooltip" id="add-civil-start" name="add-civil-start" title="Можно указать неполную дату. Например, только год, если не известно остальное">
             </div> 
           </div>
           <div class="form-group">
-            <label class="control-label col-md-3 col-sm-3 col-xs-12">Увольнение 
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="add-civil-end">Увольнение
             </label>
             <div class="col-md-6 col-sm-6 col-xs-12">
-                <input type="text" class="form-control" data-toggle="tooltip" title="Можно указать неполную дату. Например, только год, если не известно остальное">
+                <input type="text" name="add-civil-end" id="add-civil-end" class="form-control" data-toggle="tooltip" title="Можно указать неполную дату. Например, только год, если не известно остальное">
             </div> 
           </div>
           <div class="form-group">
-            <label for="civil-phone" class="control-label col-md-3 col-sm-3 col-xs-12">Рабочий телефон</label>
+            <label for="add-civil-phone" class="control-label col-md-3 col-sm-3 col-xs-12">Рабочий телефон</label>
             <div class="col-md-6 col-sm-6 col-xs-12">
-              <input class="form-control col-md-7 col-xs-12" type="tel" name="work-phone">
+              <input class="form-control col-md-7 col-xs-12" type="tel" name="add-civil-phone" id="add-civil-phone">
             </div>
           </div>
           <div class="form-group">
-            <label for="comment" class="control-label col-md-3 col-sm-3 col-xs-12">Комментарий</label>
+            <label for="add-civil-comment" class="control-label col-md-3 col-sm-3 col-xs-12">Комментарий</label>
             <div class="col-md-6 col-sm-6 col-xs-12">
-              <textarea class="form-control" rows="3" ></textarea>
+              <textarea class="form-control" rows="3" name="add-civil-comment" id="add-civil-comment"></textarea>
             </div>
           </div>
        

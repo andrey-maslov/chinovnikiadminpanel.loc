@@ -24,7 +24,8 @@
                         </a>
                     </li>
                     <li role="presentation" class="">
-                        <a href="#tabContentPositions" role="tab" id="positions" data-toggle="tab" aria-expanded="false">
+                        <a href="#tabContentPositions" role="tab" id="positions" data-toggle="tab"
+                           aria-expanded="false">
                             Должности
                         </a>
                     </li>
@@ -44,17 +45,16 @@
                 <div id="myTabContent" class="tab-content">
 
                     <!-- Общая информация -->
-                    <div role="tabpanel" class="tab-pane fade active in" id="tabСontentCommon" aria-labelledby="commonInfo">
+                    <div role="tabpanel" class="tab-pane fade active in" id="tabСontentCommon"
+                         aria-labelledby="commonInfo">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
-                                    <h2>Общая информация
-                                        <small>еще какойто текст</small>
-                                    </h2>
+                                    <h2>Общая информация</h2>
                                 </div>
                                 <div class="x_content">
                                     <br/>
-                                    <form id="common-info" data-parsley-validate
+                                    <form data-parsley-validate
                                           class="form-horizontal form-label-left">
 
                                         <div class="form-group">
@@ -63,7 +63,7 @@
                                                         class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="first-name" required="required"
+                                                <input type="text" required="required" name="first-name" id="first-name"
                                                        class="form-control col-md-7 col-xs-12" autofocus>
                                             </div>
                                         </div>
@@ -73,17 +73,16 @@
                                                         class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="last-name" name="last-name" required="required"
-                                                       class="form-control col-md-7 col-xs-12">
+                                                <input type="text" name="last-name" required="required"
+                                                       class="form-control col-md-7 col-xs-12" id="last-name">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="patronymic">Отчество
-                                                <span
-                                                        class="required">*</span>
+                                                <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="patronymic" name="patronymic" required="required"
+                                                <input type="text" name="patronymic" id="patronymic" required="required"
                                                        class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
@@ -121,8 +120,11 @@
                                                                 <a href="#" class="btn btn-info btn-xs"><i
                                                                             class="fa fa-edit"></i>
                                                                     Ред </a>
-                                                                <a href="#" class="btn btn-danger btn-xs"><i
-                                                                            class="far fa-trash-alt"></i> Удалить </a>
+                                                                <a class="btn btn-danger btn-xs" data-toggle="modal"
+                                                                   data-target=".query-modal">
+                                                                    <i class="far fa-trash-alt"></i>
+                                                                    Удалить
+                                                                </a>
                                                             </th>
                                                         </tr>
                                                         <tr>
@@ -136,8 +138,11 @@
                                                                 <a href="#" class="btn btn-info btn-xs"><i
                                                                             class="fa fa-edit"></i>
                                                                     Ред </a>
-                                                                <a href="#" class="btn btn-danger btn-xs"><i
-                                                                            class="far fa-trash-alt"></i> Удалить </a>
+                                                                <a class="btn btn-danger btn-xs" data-toggle="modal"
+                                                                   data-target=".query-modal">
+                                                                    <i class="far fa-trash-alt"></i>
+                                                                    Удалить
+                                                                </a>
                                                             </th>
                                                         </tr>
                                                         <tr>
@@ -151,8 +156,11 @@
                                                                 <a href="#" class="btn btn-info btn-xs"><i
                                                                             class="fa fa-edit"></i>
                                                                     Ред </a>
-                                                                <a href="#" class="btn btn-danger btn-xs"><i
-                                                                            class="far fa-trash-alt"></i> Удалить </a>
+                                                                <a class="btn btn-danger btn-xs" data-toggle="modal"
+                                                                   data-target=".query-modal">
+                                                                    <i class="far fa-trash-alt"></i>
+                                                                    Удалить
+                                                                </a>
                                                             </th>
                                                         </tr>
                                                         </tbody>
@@ -164,15 +172,15 @@
                                             <label for="maiden-name" class="control-label col-md-3 col-sm-3 col-xs-12">Девичья
                                                 фамилия</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input id="maiden-name" class="form-control col-md-7 col-xs-12"
+                                                <input class="form-control col-md-7 col-xs-12"
                                                        type="text"
-                                                       name="maiden-name">
+                                                       name="maiden-name" id="maiden-name">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Пол</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <div id="gender" class="btn-group" data-toggle="buttons">
+                                                <div class="btn-group" data-toggle="buttons">
                                                     <label class="btn btn-primary active"
                                                            data-toggle-class="btn-primary"
                                                            data-toggle-passive-class="btn-default">
@@ -192,43 +200,49 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Дата рождения
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="date-birth">Дата
+                                                рождения
                                             </label>
                                             <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="date-birth"
+                                                       id="date-birth">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Дата выхода на
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="pension-date">Дата
+                                                выхода на
                                                 пенсию
                                             </label>
                                             <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="pension-date"
+                                                       id="pension-date">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Дата смерти
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="death-date">Дата
+                                                смерти
                                             </label>
                                             <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="death-date"
+                                                       id="death-date">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="civil-phone"
                                                    class="control-label col-md-3 col-sm-3 col-xs-12">Телефон</label>
                                             <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <input id="civil-phone" class="form-control col-md-7 col-xs-12"
+                                                <input class="form-control col-md-7 col-xs-12"
                                                        type="text"
-                                                       name="civil-phone">
+                                                       name="civil-phone" id="civil-phone">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="civil-email"
-                                                   class="control-label col-md-3 col-sm-3 col-xs-12">Email</label>
+                                            <label
+                                                    class="control-label col-md-3 col-sm-3 col-xs-12" for="civil-email">Email</label>
                                             <div class="col-md-3 col-sm-6 col-xs-12">
-                                                <input id="civil-email" class="form-control col-md-7 col-xs-12"
+                                                <input class="form-control col-md-7 col-xs-12"
                                                        type="email"
-                                                       name="civil-email">
+                                                       name="civil-email" id="civil-email">
                                             </div>
                                         </div>
 
@@ -247,7 +261,7 @@
                     </div><!--/ Общая информация -->
 
                     <!-- Дополнительная информация -->
-                    <div role="tabpanel" class="tab-pane fade" id="tabContentAdd" aria-labelledby="profile-tab">
+                    <div role="tabpanel" class="tab-pane fade" id="tabContentAdd" >
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
@@ -255,12 +269,12 @@
                                 </div>
                                 <div class="x_content">
 
-                                    <form >
+                                    <form>
                                         <div class="form-group">
                                             <label class="control-label col-md-2 col-sm-3 col-xs-12">Текстовый
                                                 редактор</label>
                                             <div class="col-sm-10 col-xs-12">
-                                                <textarea class="ckeditor" id="ckeditor"> </textarea>
+                                                <textarea class="ckeditor" id="ckeditor1"> </textarea>
                                             </div>
                                         </div>
 
@@ -269,6 +283,14 @@
                                                 <button type="submit" class="btn btn-success">Сохранить</button>
                                             </div>
                                         </div>
+
+                                        <!-- CKeditor init -->
+                                        <script>
+                                            CKEDITOR.replace('ckeditor1', {
+                                                language: 'ru'
+                                            });
+                                        </script>
+
                                     </form>
                                 </div>
                             </div>
@@ -276,7 +298,7 @@
                     </div><!--/Дополнительная информация -->
 
                     <!-- Должности -->
-                    <div role="tabpanel" class="tab-pane fade" id="tabContentPositions" aria-labelledby="profile-tab">
+                    <div role="tabpanel" class="tab-pane fade" id="tabContentPositions" >
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
@@ -302,7 +324,7 @@
                                         </table>
                                     </div>
                                     <button type="button" class="btn btn-primary" data-toggle="modal"
-                                            data-target=".bs-example-modal-lg">Добавить должность
+                                            data-target=".new-workplace">Добавить должность
                                     </button>
                                 </div>
                             </div>
@@ -346,8 +368,9 @@
                                                     <a href="#" class="btn btn-info btn-xs"><i class="fas fa-edit"></i>
                                                         Ред
                                                     </a>
-                                                    <a href="#" class="btn btn-danger btn-xs"><i
-                                                                class="far fa-trash-alt"></i></i>
+                                                    <a class="btn btn-danger btn-xs" data-toggle="modal"
+                                                       data-target=".query-modal">
+                                                        <i class="far fa-trash-alt"></i>
                                                         Удалить
                                                     </a>
                                                 </td>
@@ -363,8 +386,9 @@
                                                     <a href="#" class="btn btn-info btn-xs"><i class="fa fa-edit"></i>
                                                         Ред
                                                     </a>
-                                                    <a href="#" class="btn btn-danger btn-xs"><i
-                                                                class="far fa-trash-alt"></i>
+                                                    <a class="btn btn-danger btn-xs" data-toggle="modal"
+                                                       data-target=".query-modal">
+                                                        <i class="far fa-trash-alt"></i>
                                                         Удалить
                                                     </a>
                                                 </td>
@@ -380,8 +404,9 @@
                                                     <a href="#" class="btn btn-info btn-xs"><i class="fa fa-edit"></i>
                                                         Ред
                                                     </a>
-                                                    <a href="#" class="btn btn-danger btn-xs"><i
-                                                                class="far fa-trash-alt"></i>
+                                                    <a class="btn btn-danger btn-xs" data-toggle="modal"
+                                                       data-target=".query-modal">
+                                                        <i class="far fa-trash-alt"></i>
                                                         Удалить
                                                     </a>
                                                 </td>
@@ -392,16 +417,15 @@
                                     </div>
 
                                     <button type="button" class="btn btn-primary" data-toggle="modal"
-                                            data-target=".bs-example-modal-lg">Добавить должность
+                                            data-target=".new-workplace">Добавить должность
                                     </button>
                                 </div>
                             </div>
                         </div>     <!--/ Должности full -->
                     </div><!--/ Должности common -->
 
-
                     <!-- Загрузить фотографию -->
-                    <div role="tabpanel" class="tab-pane fade" id="tabContentImages" aria-labelledby="profile-tab">
+                    <div role="tabpanel" class="tab-pane fade" id="tabContentImages" >
                         <div class="col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
@@ -420,9 +444,12 @@
 
                                     <div class="ln_solid"></div>
                                     <div class="form-group upload-link">
-                                        <label for="website" class="control-label col-md-2 col-sm-3 col-xs-12">Загрузить по ссылке</label>
+                                        <label for="civil-upload-link"
+                                               class="control-label col-md-2 col-sm-3 col-xs-12">Загрузить
+                                            по ссылке</label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="website" class="form-control col-md-7 col-xs-12" type="url" name="website">
+                                            <input class="form-control col-md-7 col-xs-12" type="url"
+                                                   name="civil-upload-link" id="civil-upload-link">
                                         </div>
                                     </div>
 
@@ -438,7 +465,7 @@
                     </div><!-- / Загрузить фотографию -->
 
                     <!-- Обещания -->
-                    <div role="tabpanel" class="tab-pane fade" id="tabContentPromises" aria-labelledby="profile-tab">
+                    <div role="tabpanel" class="tab-pane fade" id="tabContentPromises" >
                         <div class="col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
@@ -448,27 +475,29 @@
                                 </div>
                                 <div class="x_content">
 
-                                    <form  class="case-promise-date">
+                                    <form class="case-promise-date">
                                         <div class="form-group">
                                             <label class="control-label col-md-2 col-sm-3 col-xs-12">Выберите дату
                                                 проверки
                                                 обещания
                                             </label>
                                             <div class="col-md-2 col-sm-6 col-xs-12">
-                                                <input type="text" class="form-control date-picker" id="promiseFinish"
-                                                       value="">
+                                                <input type="text" class="form-control date-picker" value="">
                                             </div>
                                         </div>
                                     </form>
 
-                                    <form id="casePromise" class="civilPromise" >
-                                        <p>Если есть необходимость добавить такую характеристику как "выполнение
-                                            обещаний",
-                                            то активируйте форму ниже и выберите нужный пункт.</p>
+                                    <form id="civilPromise">
+                                        <div class="col-xs-12 promise-desc">
+                                            <span>Если есть необходимость добавить такую характеристику как "выполнение
+                                                обещаний",
+                                                то активируйте форму ниже и выберите нужный пункт.</span>
+                                        </div>
                                         <div class="col-md-2 col-sm-4 col-xs-12 promise-activate">
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox" name="activate" id="promiseActivate">
+                                                    <input type="checkbox" name="civilPromiseActivate"
+                                                           id="civilPromiseActivate">
                                                     Активировать форму
                                                 </label>
                                             </div>
@@ -476,13 +505,13 @@
                                         <div class="col-md-4 col-sm-8 col-xs-12 promise-radio">
                                             <div class="radio">
                                                 <label>
-                                                    <input type="radio" name="promise" id="casePromiseYes" disabled>
+                                                    <input type="radio" name="promise" id="civilPromiseYes" disabled>
                                                     Выполняет обещания
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label>
-                                                    <input type="radio" name="promise" id="casePromiseNo" disabled>
+                                                    <input type="radio" name="promise" id="civilPromiseNo" disabled>
                                                     Не
                                                     выполняет обещания
                                                 </label>
@@ -493,39 +522,20 @@
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-success">Сохранить</button>
                                         </div>
+                                    </form>
                                 </div>
-                                </form>
                             </div>
-                        </div>
-                    </div><!-- / Promises -->
+                        </div><!-- / col-xs-12 -->
+                    </div><!-- / Обещания -->
 
-                </div><!-- / Tab content -->
+                </div> <!-- / Tab content -->
 
-            </div> <!-- / Tab wrapper -->
+            </div> <!-- / .tab-wrapper -->
 
-        </div> <!-- / row -->
+        </div> <!-- / row-->
 
-    </div>
-
-    <script>
-        $(document).ready(function(){
-
-           $('#promiseActivate').on('change', function() {
-               if ( $(this).prop('checked') ) {
-                   $('#casePromiseYes').prop('disabled', false);
-                   $('#casePromiseNo').prop('disabled', false);
-               }
-               else
-               {
-                   $('#casePromiseYes').prop('disabled', true)
-                   $('#casePromiseNo').prop('disabled', true)
-               }
-           });
-        });
-    </script>
-
-    <!-- Modal New workplace -->
-    <?php include 'new-workplace-modal.php'; ?>
+        <!-- Modal New workplace -->
+        <?php include 'new-workplace-modal.php'; ?>
 
 
 

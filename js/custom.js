@@ -140,3 +140,34 @@ function countChecked() {
     }
 }
 /** ******  /table  *********************** **/
+
+/** ******  Promises activation *************** **/
+
+$(document).ready(function () {
+
+    $('#civilPromiseActivate').on('change', function () {
+        if ($(this).prop('checked')) {
+            $('#civilPromiseYes').prop('disabled', false);
+            $('#civilPromiseNo').prop('disabled', false);
+        }
+        else {
+            $('#civilPromiseYes').prop('disabled', true)
+            $('#civilPromiseNo').prop('disabled', true)
+        }
+    });
+
+    $('#casePromiseActivate').on('change', function() {
+        if ( $(this).prop('checked') ) {
+            $('#casePromiseYes').prop('disabled', false);
+            $('#casePromiseNo').prop('disabled', false);
+            $('#casePromiseProcess').prop('disabled', false);
+        }
+        else
+        {
+            $('#casePromiseYes').prop('disabled', true)
+            $('#casePromiseNo').prop('disabled', true)
+            $('#casePromiseProcess').prop('disabled', true);
+        }
+    });
+
+});

@@ -38,7 +38,11 @@
                     <td class=" last">
                       <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> Смотреть </a>
                       <a href="#" class="btn btn-info btn-xs"><i class="fa fa-edit"></i> Ред </a>
-                      <a href="#" class="btn btn-danger btn-xs"><i class="far fa-trash-alt"></i> Удалить </a>
+                        <a class="btn btn-danger btn-xs" data-toggle="modal"
+                           data-target=".query-modal">
+                            <i class="far fa-trash-alt"></i>
+                            Удалить
+                        </a>
                     </td>
                   </tr>
                   <tr class="odd pointer">
@@ -49,7 +53,11 @@
                     <td class=" last">
                       <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> Смотреть </a>
                       <a href="#" class="btn btn-info btn-xs"><i class="fa fa-edit"></i> Ред </a>
-                      <a href="#" class="btn btn-danger btn-xs"><i class="far fa-trash-alt"></i> Удалить </a>
+                        <a class="btn btn-danger btn-xs" data-toggle="modal"
+                           data-target=".query-modal">
+                            <i class="far fa-trash-alt"></i>
+                            Удалить
+                        </a>
                     </td>
                   </tr>
                   <tr class="even pointer">
@@ -60,7 +68,11 @@
                     <td class=" last">
                       <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> Смотреть </a>
                       <a href="#" class="btn btn-info btn-xs"><i class="fa fa-edit"></i> Ред </a>
-                      <a href="#" class="btn btn-danger btn-xs"><i class="far fa-trash-alt"></i> Удалить </a>
+                        <a class="btn btn-danger btn-xs" data-toggle="modal"
+                           data-target=".query-modal">
+                            <i class="far fa-trash-alt"></i>
+                            Удалить
+                        </a>
                     </td>
                   </tr>
                 </tbody>

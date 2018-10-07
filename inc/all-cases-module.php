@@ -18,20 +18,20 @@
                     </div>
                     <div class="x_content">
                         <!-- Выбор временного промежутка -->
-                        <form id="caseCommonInfo" data-parsley-validate class="form-horizontal form-label-left">
+                        <form data-parsley-validate class="form-horizontal form-label-left">
 
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">С
                                 </label>
                                 <div class="col-md-3 col-sm-6 col-xs-12">
-                                    <input type="text" class="form-control date-picker" id="start">
+                                    <input type="text" class="form-control date-picker">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">По
                                 </label>
                                 <div class="col-md-3 col-sm-6 col-xs-12">
-                                    <input type="text" class="form-control date-picker" id="end">
+                                    <input type="text" class="form-control date-picker">
                                 </div>
                             </div>
 
@@ -40,8 +40,9 @@
                                 <button type="submit" class="btn btn-success">Показать</button>
                             </div>
                         </form><!-- / Выбор временного промежутка -->
+
                         <div class="table-wrapper table-responsive">
-                            <table id="allCases" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                            <table class="table table-striped table-bordered dt-responsive nowrap" >
                                 <thead>
                                 <tr class="headings">
                                     <th class="column-title">Название</th>
@@ -63,7 +64,10 @@
                                         <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> Смотреть
                                         </a>
                                         <a href="#" class="btn btn-info btn-xs"><i class="fa fa-edit"></i> Ред </a>
-                                        <a href="#" class="btn btn-danger btn-xs"><i class="far fa-trash-alt"></i> Удалить
+                                        <a class="btn btn-danger btn-xs" data-toggle="modal"
+                                           data-target=".query-modal">
+                                            <i class="far fa-trash-alt"></i>
+                                            Удалить
                                         </a>
                                     </td>
                                 </tr>
@@ -76,7 +80,10 @@
                                         <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> Смотреть
                                         </a>
                                         <a href="#" class="btn btn-info btn-xs"><i class="fa fa-edit"></i> Ред </a>
-                                        <a href="#" class="btn btn-danger btn-xs"><i class="far fa-trash-alt"></i> Удалить
+                                        <a class="btn btn-danger btn-xs" data-toggle="modal"
+                                           data-target=".query-modal">
+                                            <i class="far fa-trash-alt"></i>
+                                            Удалить
                                         </a>
                                     </td>
                                 </tr>
@@ -89,7 +96,10 @@
                                         <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> Смотреть
                                         </a>
                                         <a href="#" class="btn btn-info btn-xs"><i class="fa fa-edit"></i> Ред </a>
-                                        <a href="#" class="btn btn-danger btn-xs"><i class="far fa-trash-alt"></i> Удалить
+                                        <a class="btn btn-danger btn-xs" data-toggle="modal"
+                                           data-target=".query-modal">
+                                            <i class="far fa-trash-alt"></i>
+                                            Удалить
                                         </a>
                                     </td>
                                 </tr>

@@ -22,6 +22,6 @@
     <!-- page content  -->
 
     <!-- new civil area -->
-<?php include 'inc/managers-module.php'; ?>
+<?php include 'inc/editors-module.php'; ?>
 
 <?php include 'inc/footer.php'; ?>

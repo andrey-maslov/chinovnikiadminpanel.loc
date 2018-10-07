@@ -20,7 +20,7 @@
                         </a>
                     </li>
                     <li role="presentation" class="">
-                        <a href="#tabcasetext" role="tab" id="caseText" data-toggle="tab" aria-expanded="false">
+                        <a href="#tabCaseText" role="tab" id="caseText" data-toggle="tab" aria-expanded="false">
                             Текст публикации
                         </a>
                     </li>
@@ -74,7 +74,8 @@
                                                 <span class="required">*</span>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="case-header" required="required"
+                                                <input type="text" required="required" name="case-header"
+                                                       id="case-header"
                                                        class="form-control col-md-7 col-xs-12" autofocus>
                                             </div>
                                         </div>
@@ -82,8 +83,8 @@
                                             <label for="case-desc"
                                                    class="control-label col-md-3 col-sm-3 col-xs-12">Описание</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <textarea id="case-desc" class="form-control" rows="3"
-                                                    placeholder="Описание случая"></textarea>
+                                            <textarea class="form-control" rows="3" name="case-desc" id="case-desc"
+                                                      placeholder="Описание случая"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -91,7 +92,7 @@
                                                 случая</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
                                                 <select name="case-type" class="select2_multiple form-control"
-                                                        multiple="multiple">
+                                                        multiple="multiple" id="case-type">
                                                     <option>Злосное превышение полномочий</option>
                                                     <option>Устойчивое развитие</option>
                                                     <option>Безалаберность</option>
@@ -109,8 +110,8 @@
                                                 <small>(Город, деревня, район города)</small>
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="case-location"
-                                                       class="form-control col-md-7 col-xs-12">
+                                                <input type="text" class="form-control col-md-7 col-xs-12"
+                                                       name="case-location" id="case-location">
                                             </div>
                                         </div>
                                         <div class="ln_solid"></div>
@@ -164,8 +165,9 @@
                                                     <a href="#" class="btn btn-info btn-xs"><i class="fa fa-edit"></i>
                                                         Ред
                                                     </a>
-                                                    <a href="#" class="btn btn-danger btn-xs"><i
-                                                                class="far fa-trash-alt"></i>
+                                                    <a class="btn btn-danger btn-xs" data-toggle="modal"
+                                                       data-target=".query-modal">
+                                                        <i class="far fa-trash-alt"></i>
                                                         Удалить
                                                     </a>
                                                 </td>
@@ -183,8 +185,9 @@
                                                     <a href="#" class="btn btn-info btn-xs"><i class="fa fa-edit"></i>
                                                         Ред
                                                     </a>
-                                                    <a href="#" class="btn btn-danger btn-xs"><i
-                                                                class="far fa-trash-alt"></i>
+                                                    <a class="btn btn-danger btn-xs" data-toggle="modal"
+                                                       data-target=".query-modal">
+                                                        <i class="far fa-trash-alt"></i>
                                                         Удалить
                                                     </a>
                                                 </td>
@@ -202,8 +205,9 @@
                                                     <a href="#" class="btn btn-info btn-xs"><i class="fa fa-edit"></i>
                                                         Ред
                                                     </a>
-                                                    <a href="#" class="btn btn-danger btn-xs"><i
-                                                                class="far fa-trash-alt"></i>
+                                                    <a class="btn btn-danger btn-xs" data-toggle="modal"
+                                                       data-target=".query-modal">
+                                                        <i class="far fa-trash-alt"></i>
                                                         Удалить
                                                     </a>
                                                 </td>
@@ -218,7 +222,7 @@
                     </div> <!--/ tab wrapper-->
 
                     <!-- Текст публикации -->
-                    <div role="tabpanel" class="tab-pane fade" id="tabcasetext" aria-labelledby="profile-tab">
+                    <div role="tabpanel" class="tab-pane fade" id="tabCaseText" >
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
@@ -226,21 +230,21 @@
                                 </div>
                                 <div class="x_content">
 
-                                    <form id="case-publication" class="case-publication">
+                                    <form class="case-publication">
                                         <div class="form-group">
                                             <div class="col-xs-12">
-                                                <textarea class="ckeditor" id="ckeditor"></textarea>
+                                                <textarea class="ckeditor" id="ckeditor2"></textarea>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
                                         <div class="checkbox">
                                             <label class="case-text-checkbox ">
-                                                <input type="checkbox" > Опубликовать
+                                                <input type="checkbox"> Опубликовать
                                             </label>
                                         </div>
                                         <div class="checkbox">
                                             <label class="case-text-checkbox ">
-                                                <input type="checkbox" > Отобразить в ленте
+                                                <input type="checkbox"> Отобразить в ленте
                                             </label>
                                         </div>
                                         <div class="form-group case-text-button">
@@ -248,6 +252,13 @@
                                                 <button type="submit" class="btn btn-success">Сохранить</button>
                                             </div>
                                         </div>
+
+                                        <!-- CKeditor init -->
+                                        <script>
+                                            CKEDITOR.replace('ckeditor2', {
+                                                language: 'ru'
+                                            });
+                                        </script>
 
                                     </form>
 
@@ -258,7 +269,7 @@
 
 
                     <!-- Загрузить фотографию -->
-                    <div role="tabpanel" class="tab-pane fade" id="tabCasePreview" aria-labelledby="profile-tab">
+                    <div role="tabpanel" class="tab-pane fade" id="tabCasePreview" >
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
@@ -274,9 +285,11 @@
                                     <div class="clearfix"></div>
 
                                     <div class="form-group upload-link">
-                                        <label for="website" class="control-label col-md-2 col-sm-3 col-xs-12">Загрузить по ссылке</label>
+                                        <label for="case-upload-link" class="control-label col-md-2 col-sm-3 col-xs-12">Загрузить
+                                            по ссылке</label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input id="website" class="form-control col-md-7 col-xs-12" type="url" name="website">
+                                            <input class="form-control col-md-7 col-xs-12" type="url"
+                                                   name="case-upload-link" id="case-upload-link">
                                         </div>
                                     </div>
 
@@ -291,7 +304,7 @@
                     </div><!-- / Загрузить фотографию -->
 
                     <!-- Связанные организации (пустой блок) -->
-                    <div role="tabpanel" class="tab-pane fade" id="tabCaseOrg" aria-labelledby="profile-tab">
+                    <div role="tabpanel" class="tab-pane fade" id="tabCaseOrg" >
 
                         <!-- Связанные организации (пустой блок) -->
                         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -335,9 +348,10 @@
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12"
-                                                   for="case-header">Организация</label>
+                                                   for="connected-org-name">Организация</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="" class="form-control">
+                                                <input type="text" class="form-control" name="connected-org-name"
+                                                       id="connected-org-name">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-xs-12 col-md-offset-3">
@@ -381,7 +395,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="odd pointer">
-                                                        <td >Пожар в лесном огороде</td>
+                                                        <td>Пожар в лесном огороде</td>
                                                         <td class="last">
                                                             <a href="#" class="btn btn-danger btn-xs"><i
                                                                         class="far fa-trash-alt"></i>
@@ -411,9 +425,10 @@
 
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12"
-                                                   for="case-header">Организация</label>
+                                                   for="connected-org-name">Организация</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="" class="form-control">
+                                                <input type="text" class="form-control" name="connected-org-name"
+                                                       id="connected-org-name">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-xs-12 col-md-offset-3">
@@ -429,7 +444,7 @@
                     </div><!-- one tab wrapper -->
 
                     <!-- Связанные публикации (пустой блок) -->
-                    <div role="tabpanel" class="tab-pane fade" id="tabCasePubl" aria-labelledby="profile-tab">
+                    <div role="tabpanel" class="tab-pane fade" id="tabCasePubl" >
 
                         <!-- Связанные публикации (пустой блок) -->
                         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -473,9 +488,10 @@
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12"
-                                                   for="case-header">Публикации</label>
+                                                   for="connected-case-name">Публикации</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" id="" class="form-control">
+                                                <input type="text" class="form-control" name="connected-case-name"
+                                                       id="connected-case-name">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-xs-12 col-md-offset-3">
@@ -510,30 +526,30 @@
                                                     </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr class="even pointer">
-                                                            <td>Пожар в лесном огороде</td>
-                                                            <td class="last">
-                                                                <a href="#" class="btn btn-danger btn-xs"><i
-                                                                            class="far fa-trash-alt"></i>
-                                                                    Отвязать </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="odd pointer">
-                                                            <td>Пожар в лесном огороде</td>
-                                                            <td class="last">
-                                                                <a href="#" class="btn btn-danger btn-xs"><i
-                                                                            class="far fa-trash-alt"></i>
-                                                                    Отвязать </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="even pointer">
-                                                            <td>Пожар в лесном огороде</td>
-                                                            <td class="last">
-                                                                <a href="#" class="btn btn-danger btn-xs"><i
-                                                                            class="far fa-trash-alt"></i>
-                                                                    Отвязать </a>
-                                                            </td>
-                                                        </tr>
+                                                    <tr class="even pointer">
+                                                        <td>Пожар в лесном огороде</td>
+                                                        <td class="last">
+                                                            <a href="#" class="btn btn-danger btn-xs"><i
+                                                                        class="far fa-trash-alt"></i>
+                                                                Отвязать </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="odd pointer">
+                                                        <td>Пожар в лесном огороде</td>
+                                                        <td class="last">
+                                                            <a href="#" class="btn btn-danger btn-xs"><i
+                                                                        class="far fa-trash-alt"></i>
+                                                                Отвязать </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="even pointer">
+                                                        <td>Пожар в лесном огороде</td>
+                                                        <td class="last">
+                                                            <a href="#" class="btn btn-danger btn-xs"><i
+                                                                        class="far fa-trash-alt"></i>
+                                                                Отвязать </a>
+                                                        </td>
+                                                    </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -549,9 +565,10 @@
 
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12"
-                                                   for="case-header">Публикация</label>
+                                                   for="connected-case-name">Публикации</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="connected-case-name"
+                                                       id="connected-case-name">
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-xs-12 col-md-offset-3">
@@ -568,7 +585,7 @@
 
 
                     <!-- Переписка -->
-                    <div role="tabpanel" class="tab-pane fade" id="tabCaseCorr" aria-labelledby="profile-tab">
+                    <div role="tabpanel" class="tab-pane fade" id="tabCaseCorr" >
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
@@ -608,7 +625,7 @@
                     </div>  <!-- Переписка -->
 
                     <!-- Обещания -->
-                    <div role="tabpanel" class="tab-pane fade" id="tabCasePromises" aria-labelledby="profile-tab">
+                    <div role="tabpanel" class="tab-pane fade" id="tabCasePromises" >
                         <div class="col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
@@ -626,7 +643,7 @@
                                                 обещания
                                             </label>
                                             <div class="col-md-2 col-sm-6 col-xs-12">
-                                                <input type="text" class="form-control date-picker" id="promiseFinish"
+                                                <input type="text" class="form-control date-picker"
                                                        value="<?php /* echo date('d/m/Y'); */ ?>">
                                             </div>
                                             <div class="col-md-2 col-sm-12">
@@ -634,14 +651,17 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <form id="casePromise" class="civilPromise" action="">
-                                        <p>Если есть необходимость добавить такую характеристику как "выполнение
-                                            обещаний",
-                                            то активируйте форму ниже и выберите нужный пункт.</p>
+                                    <form class="casePromise">
+                                        <div class="col-xs-12 promise-desc">
+                                            <span>Если есть необходимость добавить такую характеристику как "выполнение
+                                                обещаний",
+                                                то активируйте форму ниже и выберите нужный пункт.</span>
+                                        </div>
                                         <div class="col-md-2 col-sm-4 col-xs-12 promise-activate">
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox"  name="promiseActivate" id="promiseActivate">
+                                                    <input type="checkbox" name="casePromiseActivate"
+                                                           id="casePromiseActivate">
                                                     Активировать форму
                                                 </label>
                                             </div>
@@ -673,8 +693,8 @@
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-success">Сохранить</button>
                                         </div>
+                                    </form>
                                 </div>
-                                </form>
                             </div>
                         </div>
                     </div> <!-- / Обещания -->
@@ -683,24 +703,4 @@
 
             </div> <!-- / tab wrapper -->
 
-
         </div>   <!-- / row -->
-
-        <script>
-            $(document).ready(function(){
-
-                $('#promiseActivate').on('change', function() {
-                    if ( $(this).prop('checked') ) {
-                        $('#casePromiseYes').prop('disabled', false);
-                        $('#casePromiseNo').prop('disabled', false);
-                        $('#casePromiseProcess').prop('disabled', false);
-                    }
-                    else
-                    {
-                        $('#casePromiseYes').prop('disabled', true)
-                        $('#casePromiseNo').prop('disabled', true)
-                        $('#casePromiseProcess').prop('disabled', false);
-                    }
-                });
-            });
-        </script>

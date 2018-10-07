@@ -1,5 +1,3 @@
-<script src="ckeditor/ckeditor.js"></script>
-
 <script src="js/bootstrap.min.js"></script>
 
 <!-- daterangepicker -->
@@ -13,15 +11,8 @@
 <script src="js/custom.js"></script>
 
 <!--    Datatable new-->
-<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+<script src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
 
-
-<script type="text/javascript">
-    // Replace the <textarea id="editor1"> with a CKEditor
-    // instance, using default configuration.
-    CKEDITOR.replace( 'ckeditor' );
-    CKEDITOR.replace( 'ckeditor2' );
-</script>
 
 <!-- input mask -->
 <script>
@@ -33,11 +24,45 @@
 <!-- dropzone -->
 <script src="js/dropzone/dropzone.js"></script>
 
-<script type="text/javascript">
+<script>
     $(document).ready(function() {
         $('.date-picker').daterangepicker({
             singleDatePicker: true,
             calender_style: "picker_4",
+            "locale": {
+        "format": "MM.DD.YYYY",
+        "separator": " - ",
+        "applyLabel": "Применить",
+        "cancelLabel": "Закрыть",
+        "fromLabel": "С",
+        "toLabel": "По",
+        "customRangeLabel": "Custom",
+        "weekLabel": "Н",
+        "daysOfWeek": [
+            "Вс",
+            "Пн",
+            "Вт",
+            "Ср",
+            "Чт",
+            "Пт",
+            "Сб"
+        ],
+        "monthNames": [
+            "Январь",
+            "Февраль",
+            "Март",
+            "Апрель",
+            "Май",
+            "Июнь",
+            "Июль",
+            "Август",
+            "Сентябрь",
+            "Октябрь",
+            "Ноябрь",
+            "Декабрь"
+        ],
+        "firstDay": 1
+    },
         }, function(start, end, label) {
             console.log(start.toISOString(), end.toISOString(), label);
         });
